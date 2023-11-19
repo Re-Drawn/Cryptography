@@ -44,9 +44,8 @@ def rsa(p, q):
     # Given 2 primes, p and q
     # Generate public key pair (e, n) and private key (d, n)
     generate_keys(p, q)
-    print("A")
+    
 
 e, d, n = generate_keys(2, 7)
 cipher = encrypt([43,59,42,52,20,37,34,30,30], 3, 667)
 print(cipher)
-
